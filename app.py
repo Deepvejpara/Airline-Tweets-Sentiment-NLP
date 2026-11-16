@@ -38,7 +38,7 @@ EXAMPLE_TWEETS = {
 @st.cache_resource
 def load_sentiment_pipeline():
     """Load the trained scikit-learn sentiment pipeline from disk."""
-    return joblib.load("sentiment_pipeline.pkl")
+    return joblib.load("models/sentiment_pipeline.pkl")
 
 
 st.title("✈️ Airline Tweet Sentiment Analyzer")
